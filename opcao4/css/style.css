@@ -9,7 +9,7 @@
     padding: 0px;
     margin: 0px;
     font-family: "Poppins", sans-serif;
-    list-style:none;
+    list-style: none;
 }
 
 main {
@@ -17,9 +17,11 @@ main {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.containerSection {
+.containerSection,
+#containerFooter {
     width: 100vw;
 }
 
@@ -97,7 +99,9 @@ main {
 }
 
 /*Configuração h2*/
-.containerGaleriaProdutos h2, .containerSobre h2, .containerContatos h2{
+.containerGaleriaProdutos h2,
+.containerSobre h2,
+.containerContatos h2 {
     color: rgb(32, 111, 186);
     text-align: center;
     text-transform: uppercase;
@@ -210,7 +214,7 @@ main {
 
 
 /*Area do SOBRE*/
-.textoSobre p{
+.textoSobre p {
     line-height: 20px;
     font-size: .9em;
     text-align: justify;
@@ -219,6 +223,7 @@ main {
     text-indent: 5%;
     background-color: #fff;
 }
+
 /*Fim area do SOBRE*/
 
 /*Area do CONTATOS*/
@@ -235,23 +240,23 @@ main {
     overflow: hidden;
 }
 
-.listaContatosul li{
+.listaContatosul li {
     font-size: .9em;
     width: 100%;
     padding-left: 5%;
 }
 
-.listaContatosul li:hover{
+.listaContatosul li:hover {
     background-color: rgb(169, 167, 167);
 }
 
-.divInfoContatos{
+.divInfoContatos {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
-.divInfoContatos{
+.divInfoContatos {
     font-size: .9em;
     text-align: justify;
     padding-left: 1%;
@@ -259,3 +264,27 @@ main {
 }
 
 /*Fim area do CONTATOS*/
+
+/*Inicio FOOTER*/
+#containerFooter {
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(32, 111, 186);
+    margin-top: 2%;
+}
+
+.listaRedeSocialFooter,
+.infoEmpresaFooter,
+.areaMarcaFooter,
+.listaFormaPagFooter {
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: red;
+}
+
+.h3Footer {
+    color: #fff;
+}
