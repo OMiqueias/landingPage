@@ -53,7 +53,68 @@
                 <img src="" alt="">
             </figure>
         </article>
+        <div class="btn-lateral-direita-contatos" onclick="interacaobtn()" id="iBtnExternoContatosLDireita">
+            <h2 id="iTxtBtnContatos">Contato</h2>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img class="iContatos-btn-lateral" onclick="event.stopPropagation()" src="img/whatsapp-logo-png-0.png"
+                    alt="Clique para falar por WhatsApp.">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="iContatos-btn-lateral" onclick="event.stopPropagation()"
+                    src="img/Instagram_icon.png" alt="Clique para ir ao Instagran."></a>
+        </div>
     </main>
+    <footer>
+        <div class="container-div-footer">
+            <div class="contato-footer">
+                <h2 class="h2-div-footer">Contatos:</h2>
+                <ul>
+                    <li>Telefone: (N/D)</li>
+                    <li>Celular: +55 (11) 98652-0521</li>
+                    <li>E-mail: o.lima1@outlook.com.br</li>
+                </ul>
+            </div>
+            <div class="redesSociais-footer">
+                <h2 class="h2-div-footer">Redes sociais:</h2>
+                <div class="containerRedesSociais-footer">
+                    <a target="_blank" href="https://br.linkedin.com/"><img src="img/i490027.jpeg" alt="Linkedin"></a>
+                    <a target="_blank" href="https://twitter.com/?lang=pt-br"><img src="img/novo-logotipo-do-twitter-x-2023-download-do-vetor-do-logotipo-do-twitter-x_691560-10794.jpg" alt="X (Antigo Twiter)"></a>
+                    <a target="_blank" href="https://br.linkedin.com/"><img src="img/i490027.jpeg" alt="Linkedin"></a>
+                    <a target="_blank" href="https://twitter.com/?lang=pt-br"><img src="img/novo-logotipo-do-twitter-x-2023-download-do-vetor-do-logotipo-do-twitter-x_691560-10794.jpg" alt="X (Antigo Twiter)"></a>
+                    <a target="_blank" href="https://br.linkedin.com/"><img src="img/i490027.jpeg" alt="Linkedin"></a>
+                    <a target="_blank" href="https://twitter.com/?lang=pt-br"><img src="img/novo-logotipo-do-twitter-x-2023-download-do-vetor-do-logotipo-do-twitter-x_691560-10794.jpg" alt="X (Antigo Twiter)"></a>
+                    <a target="_blank" href="https://br.linkedin.com/"><img src="img/i490027.jpeg" alt="Linkedin"></a>
+                    <a target="_blank" href="https://twitter.com/?lang=pt-br"><img src="img/novo-logotipo-do-twitter-x-2023-download-do-vetor-do-logotipo-do-twitter-x_691560-10794.jpg" alt="X (Antigo Twiter)"></a>
+                </div>
+            </div>
+        </div>
+        <h2><abbr title="Entre em contato: +55 (11) 986520521.">Site desenvolvido por: Otávio M. S. Lima. 2024</abbr>
+        </h2>
+    </footer>
+
+    <script>
+        function interacaobtn() {
+            // Previna o comportamento padrão do clique
+            event.stopPropagation();
+
+            let iBtnExternoContatosLDireita = document.getElementById('iBtnExternoContatosLDireita'); //Botão não expandido.
+            let iTxtBtnContatos = document.getElementById('iTxtBtnContatos'); //Texto do botão não extendido.
+            let btnContatosLateral = document.getElementsByClassName('iContatos-btn-lateral'); //Botões de contato quando área expandida.
+
+            if (iBtnExternoContatosLDireita.style.width == '25px') {
+                iBtnExternoContatosLDireita.style.width = '70px';
+                iTxtBtnContatos.style.display = 'none';
+                for (let btn of btnContatosLateral) {
+                    btn.style.display = 'block';
+                }
+            } else {
+                iBtnExternoContatosLDireita.style.width = '25px';
+                iTxtBtnContatos.style.display = 'block';
+                for (let btn of btnContatosLateral) {
+                    btn.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

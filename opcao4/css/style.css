@@ -1,0 +1,261 @@
+@charset "UTF-8";
+
+/*Fonte padrão*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Reinicialização*/
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    list-style:none;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSection {
+    width: 100vw;
+}
+
+.primeiro {
+    height: 300px;
+    background-image: url(../img/imgSecPrimeiro500x300.png);
+    /*Dimensão 500px x 500px*/
+}
+
+#capaImagem {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00000072;
+}
+
+#containerNav {
+    height: 30px;
+    width: 90%;
+    border-bottom: 2px solid #fff;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #000000a9;
+}
+
+#listaUl {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+}
+
+#listaUl>a {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 250;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+#listaUl>a:hover {
+    font-weight: 400;
+    border-bottom: 2px solid rgb(0, 0, 143);
+    background-color: #000000d3;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#containerHi {
+    width: 60%;
+    height: 30%;
+}
+
+#nomeEmpresaH1,
+#textoEmpresaH1 {
+    color: #fff;
+}
+
+#nomeEmpresaH1 {
+    text-transform: uppercase;
+    line-height: 32px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#textoEmpresaH1 {
+    line-height: 1.2em;
+    text-align: center;
+}
+
+/*Configuração h2*/
+.containerGaleriaProdutos h2, .containerSobre h2, .containerContatos h2{
+    color: rgb(32, 111, 186);
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.containerGaleriaProdutos {
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/*Area dos anuncios*/
+.corpoAnuncio {
+    height: 200px;
+    width: 450px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 8px;
+    background-color: rgb(169, 167, 167);
+    margin: 1%;
+    overflow: hidden;
+}
+
+.divisaoInternoAnuncio {
+    height: 100%;
+    width: 50%;
+}
+
+.areaInteracaoAnuncio {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.areaInformativa {
+    border-bottom: 1px solid #fff;
+}
+
+.areaInformativa h3 {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(32, 111, 186);
+}
+
+.ulCaracteristicaProd {
+    margin-left: 10%;
+}
+
+.ulCaracteristicaProd li {
+    font-size: .9em;
+    color: #fff;
+}
+
+.precoProduto {
+    width: 80%;
+    font-size: 1.2em;
+    color: #000;
+    text-align: left;
+    border-top-right-radius: 5px;
+    background-color: #fff;
+}
+
+.informacaoPagamentoProd {
+    font-size: .6em;
+    color: #fff;
+    margin-left: 1%;
+}
+
+.btnInteracao {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnInteracao a button {
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.btnInteracao a button:hover {
+    cursor: pointer;
+}
+
+.btnCompra {
+    color: #fff;
+    background-color: rgb(4, 211, 11);
+}
+
+.btnCompra:hover {
+    background-color: rgb(3, 170, 8);
+}
+
+.btnConferir:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+/*Final area de produtos*/
+
+
+/*Area do SOBRE*/
+.textoSobre p{
+    line-height: 20px;
+    font-size: .9em;
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-indent: 5%;
+    background-color: #fff;
+}
+/*Fim area do SOBRE*/
+
+/*Area do CONTATOS*/
+.containerContatos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#containerContatos {
+    width: 90%;
+    border: 1px solid rgb(169, 167, 167);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.listaContatosul li{
+    font-size: .9em;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.listaContatosul li:hover{
+    background-color: rgb(169, 167, 167);
+}
+
+.divInfoContatos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.divInfoContatos{
+    font-size: .9em;
+    text-align: justify;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*Fim area do CONTATOS*/
