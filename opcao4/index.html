@@ -17,7 +17,7 @@
                 <nav id="containerNav">
                     <ul id="listaUl">
                         <a href="#">
-                            <li>Loja virtual</li>
+                            Loja virtual
                         </a>
                         <a href="#">
                             <li>Produtos</li>
@@ -293,7 +293,7 @@
             </article>
         </section>
         <!--Dados de contato-->
-        <section class="containerSection containerContatos">
+        <section class="containerSection containerContatosSection">
             <h2>Contatos</h2>
             <div id="containerContatos">
                 <div class="divInfoContatos">
@@ -308,49 +308,66 @@
                 </ul>
             </div>
         </section>
-        <!--Footer com Localização-->
+        <section class="containerSection containerDadosEndereco">
+            <!--Localização-->
+            <h2>Nossa Localização</h2>
+            <article class="areaInfoEndereco">
+                <ul>
+                    <li>Rua Teste dos Testes, 17.</li>
+                    <li>Bairro: Vila dos Testes, São Paulo - SP</li>
+                    <li>CEP: 01234-567</li>
+                </ul>
+            </article>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7308795193317!2d-46.47364492504427!3d-23.542179978812957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce66dbb0e79fcb%3A0xfeb932f5fbd4a42a!2sCorinthians%20-%20Itaquera!5e0!3m2!1spt-BR!2sbr!4v1722865426455!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
         <footer id="containerFooter">
-            <div class="logosERedeSocialFooter">
-                <h3 class="h3Footer">Formas de pagamentos</h3>
-                <ul class="listaFormaPagFooter">
-                    <li><img src="img/formasPag/pag_peqboletoonline.webp" alt=""></li>
-                    <li><img src="img/formasPag/pag_peqcartaoamex.webp" alt=""></li>
-                    <li><img src="img/formasPag/pag_peqcartaomastercard.webp" alt=""></li>
-                    <li><img src="img/formasPag/pag_peqpix.webp" alt=""></li>
-                    <li><img src="img/formasPag/pag_peqjcb.webp" alt=""></li>
+            <!--Metodo de pagamentos-->
+            <div class="divFooter metodoPagamentoFooter">
+                <h3>Forma de pagamento</h3>
+                <ul>
+                    <li><img src="img/formasPag/pag_peqboletoonline.webp" alt="1"></li>
+                    <li><img src="img/formasPag/pag_peqcartaoamex.webp" alt="2"></li>
+                    <li><img src="img/formasPag/pag_peqcartaomastercard.webp" alt="3"></li>
+                    <li><img src="img/formasPag/pag_peqcartaovisa.webp" alt="4"></li>
+                    <li><img src="img/formasPag/pag_peqjcb.webp" alt="5"></li>
+                    <li><img src="img/formasPag/pag_peqpix.webp" alt="6"></li>
+                    <li><img src="img/formasPag/pag_peqboletoonline.webp" alt="1"></li>
+                    <li><img src="img/formasPag/pag_peqcartaoamex.webp" alt="2"></li>
+                    <li><img src="img/formasPag/pag_peqcartaomastercard.webp" alt="3"></li>
+                    <li><img src="img/formasPag/pag_peqcartaovisa.webp" alt="4"></li>
+                    <li><img src="img/formasPag/pag_peqjcb.webp" alt="5"></li>
+                    <li><img src="img/formasPag/pag_peqpix.webp" alt="6"></li>
                 </ul>
             </div>
-            <div class="logosERedeSocialFooter">
-                <h3 class="h3Footer">Nossa redes sociais</h3>
-                <ul class="listaRedeSocialFooter">
-                    <a href="">
-                        <li><img src="" alt=""></li>
-                    </a>
-                    <a href="">
-                        <li><img src="" alt=""></li>
-                    </a>
-                    <a href="">
-                        <li><img src="" alt=""></li>
-                    </a>
-                    <a href="">
-                        <li><img src="" alt=""></li>
-                    </a>
-                </ul>
-            </div>
-            <div class="infoEmpresaFooter">
-                <h3 class="h3Footer">Nossa localização</h3>
-                <!--Recebe mapa google-->
-                <div class="infoEmpresaEnderecoFooter">
-                    <ul class="enderecoEmpresaFooter">
-                        <li>R. dos Testes, 27 - Vila Testes.</li>
-                        <li>Estado: São Paulo, SP.</li>
-                        <li>CEP: 01234-567.</li>
-                    </ul>
+            <!--Redes Sociais-->
+            <div class="divFooter redesSociaisFooter">
+                <h3>Redes Sociais</h3>
+                <div class="areaImgRedesSociaisFooter">
+                    <a href="#"><img src="img/linkedinIcon.png" alt="1"></a>
+                    <a href="#"><img src="img/linkedinIcon.png" alt="2"></a>
+                    <a href="#"><img src="img/linkedinIcon.png" alt="3"></a>
+                    <a href="#"><img src="img/linkedinIcon.png" alt="4"></a>
+                    <a href="#"><img src="img/linkedinIcon.png" alt="5"></a>
                 </div>
+
             </div>
-            <div class="areaMarcaFooter">
-                <h4>Site desenvolvido por Otávio M. S. Lima. 2024. São Paulo (SP).</h4>
+            <!--Logo empresa + Info empresa-->
+            <div class="divFooter infoEmpresaFooter">
+                <h3>Empresa</h3>
+                <figure>
+                    <img src="img/imgAnuncio200x225.png" alt="1">
+                    <figcaption>
+                        <p>Nome Fantasia</p>
+                        <p>Razão Social + CNPJ</p>
+                    </figcaption>
+                </figure>
             </div>
+            <!--Site desenvolvido por: otavio-->
+            <h3 class="direitos"><abbr title="Entre em contato: +55 (11) 98652-0521.">Site desenvolvido por: Otávio M. S. Lima</abbr>
+            </h3>
         </footer>
     </main>
 </body>
