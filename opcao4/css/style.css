@@ -109,6 +109,7 @@ main {
 
 #listaUl>button {
     width: 100%;
+    height: 100%;
     font-size: 1em;
     text-align: center;
     font-weight: 200;
